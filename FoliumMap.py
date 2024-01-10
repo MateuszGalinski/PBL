@@ -53,7 +53,6 @@ def main():
     if st.checkbox("Navigation"):
         location = get_geolocation()
         # location = get_user_location()
-        st.write(location)
 
         if location:
             location_tuple = [location['coords']['latitude'], location['coords']['longitude']]
