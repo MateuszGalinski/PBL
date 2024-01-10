@@ -9,8 +9,6 @@ import requests
 
 import streamlit.components.v1 as components
 
-import xml.etree.ElementTree as ET
-from tqdm import tqdm
 
 POLI_CENTRUM = [51.749444, 19.453957]
 WEEIA = [51.752759, 19.453395]
