@@ -3,12 +3,12 @@ import folium
 import streamlit as st
 from streamlit_folium import folium_static
 from streamlit_js_eval import get_geolocation # api for getting location
+from streamlit_js_eval import get_page_location
 import json
 import codecs
 import requests
 
 import streamlit.components.v1 as components
-
 
 POLI_CENTRUM = [51.749444, 19.453957]
 WEEIA = [51.752759, 19.453395]
@@ -47,37 +47,20 @@ def main():
     ).add_to(m)
 
 
-    st.header("Map of TUL")
-   # st.write(route_nodes)
-    #st.write(routejson)
-    if st.checkbox("Navigation"):
-        location = get_geolocation()
-        # location = get_user_location()
+    st.markdown("<h1 style='color: black;'>Map of TUL</h1>", unsafe_allow_html=True)
 
-        if location:
-            location_tuple = [location['coords']['latitude'], location['coords']['longitude']]
-            folium.Marker(
-                location = location_tuple, tooltip="TO TY"
-            ).add_to(m)
-
+    st.markdown("""
+        <style>
+        iframe {
+            width: 100%;
+            min-height: 400px;
+            height: 100%:
+        }
+        </style>
+        """, unsafe_allow_html=True)
     
-    folium_static(m, width=700, height=600)
+    folium_static(m, width=700, height=400)
 
-    situm()
-
-
-def situm():
-    components.html(
-        """
-        <iframe
-            id="map-viewer-iframe"
-            style="width:100%; height:600px"
-            src="https://map-viewer.situm.com?apikey=9c3d00ce080f2f9d4f08f9ceba78193fbf4a8a8f15172141d8ce6bd95dafb4c4">
-        </iframe>
-        """,
-        height = 600,
-        width = 700,
-    )
 
 if __name__ == "__main__":
     main()
