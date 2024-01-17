@@ -61,7 +61,7 @@ def main():
             ).add_to(m)
 
     
-    folium_static(m, width=700, height=400)
+    folium_static(m, width=700, height=600)
 
     situm()
 
@@ -76,6 +76,7 @@ def situm():
         </iframe>
         """,
         height = 600,
+        width = 700,
     )
 
 if __name__ == "__main__":
