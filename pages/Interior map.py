@@ -6,12 +6,20 @@ def situm():
         """
         <iframe
             id="map-viewer-iframe"
-            style="width:100%; height:600px;"
+            style="width:100%; height:500px;"
             src="https://map-viewer.situm.com?apikey=9c3d00ce080f2f9d4f08f9ceba78193fbf4a8a8f15172141d8ce6bd95dafb4c4">
         </iframe>
         """,
-        height=600,
+        height=500,
     )
+
+st.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 1rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
 
 st.markdown(
     """

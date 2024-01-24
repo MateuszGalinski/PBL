@@ -46,7 +46,6 @@ def main():
         [51.752628, 19.452957], icon=entrance_left_logo, tooltip=None
     ).add_to(m)
 
-
     st.markdown("<h1 style='color: black;'>Map of TUL</h1>", unsafe_allow_html=True)
 
     st.markdown("""
