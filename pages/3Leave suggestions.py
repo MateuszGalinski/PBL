@@ -6,7 +6,7 @@ import ssl
 def send_email(user_name, suggestion):
     sender_email = st.secrets["my_email"]
     sender_password = st.secrets["my_password"]
-    receiver_email = st.secrets["rceiver"]
+    receiver_email = st.secrets["receiver"]
     
     smtp_server = "smtp.gmail.com"
     smtp_port = 465

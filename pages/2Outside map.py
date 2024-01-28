@@ -1,12 +1,7 @@
-import pandas as pd
 import folium
 import streamlit as st
 from streamlit_folium import folium_static
-from streamlit_js_eval import get_geolocation # api for getting location
-from streamlit_js_eval import get_page_location
-import json
 import codecs
-import requests
 
 import streamlit.components.v1 as components
 
