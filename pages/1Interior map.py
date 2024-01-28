@@ -15,6 +15,9 @@ def situm():
 
 st.markdown("""
         <style>
+            .block-container {
+                padding-top: 1rem;
+            }
             [data-testid=stSidebarNavLink] span {
                 color: #ffffff !important;
             }
