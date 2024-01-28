@@ -10,7 +10,7 @@ def situm():
             src="https://map-viewer.situm.com?apikey=9c3d00ce080f2f9d4f08f9ceba78193fbf4a8a8f15172141d8ce6bd95dafb4c4">
         </iframe>
         """,
-        height=610,
+        height=700,
     )
 
 st.markdown("""
