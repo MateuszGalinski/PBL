@@ -3,6 +3,14 @@ import smtplib
 from email.message import EmailMessage
 import ssl
 
+st.markdown("""
+<style>
+    [data-testid=stSidebarNavLink] span {
+        color: #ffffff !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 def send_email(user_name, suggestion):
     sender_email = st.secrets["my_email"]
     sender_password = st.secrets["my_password"]

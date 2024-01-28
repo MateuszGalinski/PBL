@@ -18,6 +18,9 @@ st.markdown("""
             .block-container {
                 padding-top: 1rem;
             }
+            [data-testid=stSidebarNavLink] span {
+                color: #ffffff !important;
+            }
         </style>
         """, unsafe_allow_html=True)
 

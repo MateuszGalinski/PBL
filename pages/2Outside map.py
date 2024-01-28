@@ -5,6 +5,20 @@ import codecs
 
 import streamlit.components.v1 as components
 
+st.markdown("""
+    <style>
+        iframe {
+            width: 100%;
+            min-height: 400px;
+            height: 100%:
+        }
+            
+        [data-testid=stSidebarNavLink] span {
+            color: #ffffff !important;
+        }   
+    </style>
+""", unsafe_allow_html=True)
+
 POLI_CENTRUM = [51.749444, 19.453957]
 WEEIA = [51.752759, 19.453395]
 IFE = [51.7551228632686, 19.45145719746805]
@@ -42,16 +56,6 @@ def main():
     ).add_to(m)
 
     st.title("Map of TUL")
-
-    st.markdown("""
-        <style>
-        iframe {
-            width: 100%;
-            min-height: 400px;
-            height: 100%:
-        }
-        </style>
-        """, unsafe_allow_html=True)
     
     folium_static(m, width=700, height=400)
 
