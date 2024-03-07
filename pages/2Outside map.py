@@ -37,8 +37,6 @@ def main():
     ife_logo = folium.features.CustomIcon('IFE.png', icon_size=(30,30))
     entrance_left_logo = folium.features.CustomIcon('entrance_left.png', icon_size=(10,10))
     entrance_bottom_logo = folium.features.CustomIcon('entrance_bottom.png', icon_size=(10,10))
-    # piwo = folium.features.CustomIcon('piwo.png', icon_size=(30,30))
-    # door = folium.features.CustomIcon('door.png', icon_size=(15,15))
 
     weeia_popup = folium.Popup(read_html("popupHTML.html"), max_width = 2500)
     ife_popup = folium.Popup(read_html("ifeHTML.html"), max_width=2500)
